@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 36 33% 85%;
+    --card: 0 0% 0%;
+    --card-foreground: 36 33% 85%;
+    --popover: 0 0% 0%;
+    --popover-foreground: 36 33% 85%;
+    --primary: 330 100% 15%;
+    --primary-foreground: 36 33% 85%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 36 33% 85%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 36 33% 70%;
+    --accent: 330 100% 15%;
+    --accent-foreground: 36 33% 85%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 36 33% 30%;
+    --input: 36 33% 30%;
+    --ring: 330 100% 15%;
+    --radius: 0.625rem;
+    --sidebar-background: 0 0% 0%;
+    --sidebar-foreground: 36 33% 85%;
+    --sidebar-primary: 330 100% 15%;
+    --sidebar-primary-foreground: 36 33% 85%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 36 33% 85%;
+    --sidebar-border: 36 33% 30%;
+    --sidebar-ring: 330 100% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-black text-parchment;
+  }
+}
+
+/* Custom cursor styles - hide default cursor */
+* {
+  cursor: none !important;
+}
+
+/* Zapfino font styling */
+.font-zapfino {
+  font-family: 'Zapfino', cursive;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+/* Lora font */
+.font-lora {
+  font-family: 'Lora', serif;
+}
+
+/* Hide scrollbar for cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4C0027;
+  border-radius: 4px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glassmorphism effect for deal card */
+.glass-card {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(230, 214, 191, 0.2);
+}
+
+/* Date and time input styling */
+input[type="date"],
+input[type="time"] {
+  color-scheme: dark;
+}
+
+/* Select dropdown styling */
+select option {
+  background-color: #000;
+  color: #E6D6BF;
+}
