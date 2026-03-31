@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Reset ─── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #2A1A0F;
+  color: #E6D6BF;
+  font-family: 'Lora', serif;
+  cursor: url('/images/cursor_feather.png') 4 0, auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ─── Typography ─── */
+.font-zapfino { font-family: 'Zapfino', cursive; }
+.font-lora { font-family: 'Lora', serif; }
+
+/* ─── Glassmorphism card ─── */
+.glass-card {
+  background: rgba(20, 5, 10, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(230, 214, 191, 0.18);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(201, 169, 110, 0.2);
+  border-color: rgba(230, 214, 191, 0.35);
+}
+
+/* ─── Buttons ─── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #4C0027;
+  color: #E6D6BF;
+  font-family: 'Zapfino', cursive;
+  font-size: 1rem;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.75em 2.4em;
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(201, 169, 110, 0.35);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #4C0027;
+  color: #E6D6BF;
+  font-family: 'Zapfino', cursive;
+  font-size: 1rem;
+  border: 1px solid rgba(230, 214, 191, 0.3);
+  border-radius: 9999px;
+  padding: calc(0.75em - 1px) 2.4em;
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-secondary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(201, 169, 110, 0.35);
+}
+
+/* ─── Warm photo overlay ─── */
+.warm-overlay {
+  position: relative;
+}
+.warm-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(104, 54, 35, 0.50);
+  pointer-events: none;
+}
+
+/* ─── Scroll-reveal animations ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+.reveal-delay-6 { transition-delay: 0.6s; }
+
+/* ─── Parallax container ─── */
+.parallax-bg {
+  will-change: transform;
+}
+
+/* ─── Navbar link underline sweep ─── */
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #E6D6BF;
+  font-family: 'Lora', serif;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #E6D6BF;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after { width: 100%; }
+
+/* ─── Hero word-by-word entrance ─── */
+@keyframes wordReveal {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.hero-word {
+  display: inline-block;
+  opacity: 0;
+  animation: wordReveal 530ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* ─── Reduced motion ─── */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  .glass-card:hover {
+    transform: none;
+  }
+}
+
+/* ─── Vertical sidebar text ─── */
+.sidebar-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  letter-spacing: 3px;
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: rgba(230, 214, 191, 0.6);
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .sidebar-text {
+    font-size: 0.5rem;
+    display: none;
+  }
+}
+
+/* ─── Swirl SVG divider ─── */
+.swirl-path {
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  transition: stroke-dashoffset 2.5s ease 0.2s;
+}
+/* Trigger when parent .reveal becomes visible */
+.reveal.visible .swirl-path,
+.swirl-path.drawn {
+  stroke-dashoffset: 0;
+}
+
+/* ─── Star rating hover glow ─── */
+.star-rating {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 0.6rem;
+  transition: filter 0.25s ease;
+}
+.star-rating:hover svg {
+  filter: drop-shadow(0 0 5px rgba(230, 214, 191, 0.85));
+}
+
+/* ─── FAQ row hover ─── */
+.faq-row {
+  transition: background 0.2s ease;
+  border-radius: 4px;
+  padding: 0 0.5rem;
+  margin: 0 -0.5rem;
+}
+.faq-row:hover {
+  background: rgba(230, 214, 191, 0.06);
+}
+
+/* ─── Google Reviews link hover ─── */
+.google-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.25s ease;
+}
+.google-link::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: rgba(230, 214, 191, 0.7);
+  transition: width 0.3s ease;
+}
+.google-link:hover { color: rgba(230, 214, 191, 0.95) !important; }
+.google-link:hover::after { width: 100%; }
+
+/* ─── FAQ chevron spring overshoot ─── */
+@keyframes chevronOpen {
+  0%   { transform: rotate(0deg); }
+  80%  { transform: rotate(185deg); }
+  100% { transform: rotate(180deg); }
+}
+@keyframes chevronClose {
+  0%   { transform: rotate(180deg); }
+  80%  { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+.chevron-open  { animation: chevronOpen  0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
+.chevron-close { animation: chevronClose 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
+
+/* ─── CTA button first-load pulse ─── */
+@keyframes ctaPulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+.btn-pulse { animation: ctaPulse 600ms ease 2000ms 1 both; }
+
+/* ─── Nav Reserveren inner glow ─── */
+.btn-nav-reserve {
+  transition: box-shadow 0.25s ease, background 0.25s ease;
+}
+.btn-nav-reserve:hover {
+  box-shadow: inset 0 0 12px rgba(76, 0, 39, 0.6), 0 0 8px rgba(76, 0, 39, 0.3);
+}
+
+/* ─── Stagger animations ─── */
+/* Reviews: 100ms between cards */
+.stagger-reviews > .stagger-item:nth-child(1) { transition-delay: 0ms; }
+.stagger-reviews > .stagger-item:nth-child(2) { transition-delay: 100ms; }
+.stagger-reviews > .stagger-item:nth-child(3) { transition-delay: 200ms; }
+.stagger-reviews > .stagger-item:nth-child(4) { transition-delay: 300ms; }
+
+/* Feesten: 80ms between cards */
+.stagger-feesten > .stagger-item:nth-child(1) { transition-delay: 0ms; }
+.stagger-feesten > .stagger-item:nth-child(2) { transition-delay: 80ms; }
+.stagger-feesten > .stagger-item:nth-child(3) { transition-delay: 160ms; }
+.stagger-feesten > .stagger-item:nth-child(4) { transition-delay: 240ms; }
+
+/* Agenda: 60ms between cards */
+.stagger-agenda > .stagger-item:nth-child(1) { transition-delay: 0ms; }
+.stagger-agenda > .stagger-item:nth-child(2) { transition-delay: 60ms; }
+.stagger-agenda > .stagger-item:nth-child(3) { transition-delay: 120ms; }
+.stagger-agenda > .stagger-item:nth-child(4) { transition-delay: 180ms; }
+.stagger-agenda > .stagger-item:nth-child(5) { transition-delay: 240ms; }
+.stagger-agenda > .stagger-item:nth-child(6) { transition-delay: 300ms; }
+
+/* FAQ: 70ms between items */
+.stagger-faq > .stagger-item:nth-child(1) { transition-delay: 0ms; }
+.stagger-faq > .stagger-item:nth-child(2) { transition-delay: 70ms; }
+.stagger-faq > .stagger-item:nth-child(3) { transition-delay: 140ms; }
+.stagger-faq > .stagger-item:nth-child(4) { transition-delay: 210ms; }
+.stagger-faq > .stagger-item:nth-child(5) { transition-delay: 280ms; }
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #2A1A0F; }
+::-webkit-scrollbar-thumb { background: #4C0027; border-radius: 3px; }
+
+/* ─── Agenda 3D fly-in from bottom ─── */
+/*
+  Kaarten vliegen omhoog vanuit de diepte, met een lichte rotatie over de X-as.
+  De perspective is gezet op de grid-wrapper zodat de 3D-ruimte gedeeld is.
+  Delays: [0, 80, 160, 100, 180, 260]ms — diagonale golf over het 3×2 grid.
+*/
+@keyframes agenda3DFlyIn {
+  0% {
+    opacity: 0;
+    transform: translateY(80px) rotateX(28deg) scale(0.88);
+    filter: blur(3px);
+  }
+  55% {
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) rotateX(0deg) scale(1);
+    filter: blur(0);
+  }
+}
+
+/* Kaart staat stil (onzichtbaar) totdat .fly-in wordt toegevoegd */
+.agenda-3d-card {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+/* Animatie start zodra de klasse wordt gezet */
+.agenda-3d-card.fly-in {
+  animation: agenda3DFlyIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ─── Feesten perspective fold-in (rotateY vanuit links) ─── */
+/*
+  Kaarten klappen open vanuit de linkerzijde, als een kaartendek dat je uitwaaiert.
+  transform-origin: left center geeft het 'scharnierpunt' aan de linkerkant.
+  Delays: [0, 130, 260, 390]ms — cascade van links naar rechts.
+*/
+@keyframes feestenFoldIn {
+  0% {
+    opacity: 0;
+    transform: perspective(900px) rotateY(-80deg) translateX(-20px);
+  }
+  35% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(900px) rotateY(0deg) translateX(0px);
+  }
+}
+
+/* Kaart staat stil (onzichtbaar) totdat .fold-in wordt toegevoegd */
+.feesten-3d-card {
+  opacity: 0;
+  transform-origin: left center;
+  will-change: transform, opacity;
+}
+
+/* Animatie start zodra de klasse wordt gezet */
+.feesten-3d-card.fold-in {
+  animation: feestenFoldIn 0.8s cubic-bezier(0.34, 1.2, 0.64, 1) forwards;
+}
+
+/* Reduced-motion: overrides voor 3D animaties */
+@media (prefers-reduced-motion: reduce) {
+  .agenda-3d-card { opacity: 1; }
+  .feesten-3d-card { opacity: 1; transform: none; }
+  .agenda-3d-card.fly-in,
+  .feesten-3d-card.fold-in { animation: none; }
+}
+
+/* ─── Responsive grids ─── */
+
+/* Agenda: 3 col → 2 col → 1 col */
+@media (max-width: 1024px) {
+  .agenda-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 640px) {
+  .agenda-grid { grid-template-columns: 1fr !important; }
+}
+
+/* Feesten: 4 col → 2 col → 1 col */
+@media (max-width: 1024px) {
+  .feesten-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 640px) {
+  .feesten-grid { grid-template-columns: 1fr !important; }
+}
+
+/* Reviews: 4 col → 2 col → 1 col */
+@media (max-width: 1024px) {
+  .reviews-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 640px) {
+  .reviews-grid { grid-template-columns: 1fr !important; }
+}
+
+/* Deal: 2 col → 1 col (tekst boven, kaart onder) */
+@media (max-width: 768px) {
+  .deal-grid { grid-template-columns: 1fr !important; }
+  .deal-text { padding-right: 0 !important; }
+}
+
+/* Footer: 3 col → 1 col */
+@media (max-width: 768px) {
+  .footer-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+}
+
+/* Section padding verkleinen op mobiel */
+@media (max-width: 640px) {
+  section { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+  .section-content { padding: 0 1.25rem !important; }
+}
+
+/* Vacatures perks grid — 2 kolommen op mobiel */
+@media (max-width: 640px) {
+  .vacatures-perks-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.25rem !important;
+  }
+}
+
+/* ─── Feesten overzicht grid ─── */
+.feesten-overzicht-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 1024px) {
+  .feesten-overzicht-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .feesten-overzicht-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Evenementen overzicht grid ─── */
+.evenementen-overzicht-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 1024px) {
+  .evenementen-overzicht-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .evenementen-overzicht-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Zakelijk arrangementen grid ─── */
+.zakelijk-arrangementen-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+@media (max-width: 1024px) {
+  .zakelijk-arrangementen-grid {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+
+/* ─── Zakelijk ruimtes grid ─── */
+.zakelijk-ruimtes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 1024px) {
+  .zakelijk-ruimtes-grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+/* ─── Contactformulier grid (2-koloms invoervelden) ─── */
+@media (max-width: 640px) {
+  .zakelijk-form-row {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ─── Feest praktische info grid ─── */
+.feest-praktisch-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 640px) {
+  .feest-praktisch-grid {
+    grid-template-columns: 1fr;
+  }
+}
