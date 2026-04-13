@@ -15,7 +15,7 @@ export const evenementenData = {
     heroImage: '/images/feest-hero.png',
     infoImage: '/images/feest-info.png',
     intro: `Bergsma Easterein nodigt je uit voor een smaakvolle middag vol herfstinspiratie.
-Tijdens deze proewerij nemen wij je mee door een zorgvuldig samengestelde selectie van seizoensgebonden smaken — van rijpe herfstwijnen tot bijzondere borrelhapjes die perfect bij het seizoen passen.
+Tijdens deze proewerij nemen wij je mee door een zorgvuldig samengestelde selectie van seizoensgebonden smaken, van rijpe herfstwijnen tot bijzondere borrelhapjes die perfect bij het seizoen passen.
 
 Onze gastheer begeleidt je door elke gang en vertelt het verhaal achter elk product.
 Of je nu een ervaren proever bent of gewoon nieuwsgierig: deze middag is voor iedereen die houdt van eten, drinken en gezelligheid.`,
@@ -55,7 +55,7 @@ Of je nu een ervaren proever bent of gewoon nieuwsgierig: deze middag is voor ie
 Bergsma Easterein zet voor de jaarlijkse Kerstdiner Special zijn deuren open voor een avond vol warmte, sfeer en uitzonderlijk eten.
 
 Ons keukenteam bereidt een meergangenmenu met de beste seizoensproducten. Live muziek zorgt voor de perfecte kerstsfeer.
-Geniet van een avond waarbij elk detail klopt — van de eerste amuse tot het laatste glaasje.`,
+Geniet van een avond waarbij elk detail klopt, van de eerste amuse tot het laatste glaasje.`,
     faq: [
       {
         q: 'Is het een vast menu of kan ik kiezen?',
@@ -67,7 +67,7 @@ Geniet van een avond waarbij elk detail klopt — van de eerste amuse tot het la
       },
       {
         q: 'Moet ik reserveren?',
-        a: 'Ja, reserveren is verplicht. Het Kerstdiner is historisch snel volgeboekt — reserveer dus op tijd.',
+        a: 'Ja, reserveren is verplicht. Het Kerstdiner is historisch snel volgeboekt. Reserveer dus op tijd.',
       },
       {
         q: 'Is er live muziek?',
@@ -79,7 +79,7 @@ Geniet van een avond waarbij elk detail klopt — van de eerste amuse tot het la
   'wijnproewerij': {
     slug: 'wijnproewerij',
     naam: 'Wijnproewerij',
-    tagline: 'De gezelligste wijnmiddag van Easterein — dit jaar nog mooier.',
+    tagline: 'De gezelligste wijnmiddag van Easterein, dit jaar nog mooier.',
     datum: 'Zaterdag 15 maart 2025',
     starttijd: '16:00',
     eindtijd: '21:00',
@@ -91,7 +91,7 @@ Geniet van een avond waarbij elk detail klopt — van de eerste amuse tot het la
     intro: `Onze wijnproewerij is al jaren één van de meest geliefde evenementen van Bergsma Easterein.
 Een curatieve selectie wijnen, vakkundig uitgelegd door onze sommelier, gecombineerd met hapjes die elk glas perfect ondersteunen.
 
-Van lichte zomerse whites tot volle, complexe rode wijnen — deze avond leer je proeven op een manier die je bijblijft.
+Van lichte zomerse whites tot volle, complexe rode wijnen. Deze avond leer je proeven op een manier die je bijblijft.
 Kom alleen, met je partner of met vrienden: de wijnproewerij is gezellig voor iedereen.`,
     faq: [
       {
@@ -112,7 +112,7 @@ Kom alleen, met je partner of met vrienden: de wijnproewerij is gezellig voor ie
   'easterein-live': {
     slug: 'easterein-live',
     naam: 'Easterein LIVE',
-    tagline: 'Live muziek in de sfeervolle setting van Bergsma — een avond om niet te missen.',
+    tagline: 'Live muziek in de sfeervolle setting van Bergsma. Een avond om niet te missen.',
     datum: 'Vrijdag 7 november 2025',
     starttijd: '20:30',
     eindtijd: '23:00',
@@ -122,7 +122,7 @@ Kom alleen, met je partner of met vrienden: de wijnproewerij is gezellig voor ie
     heroImage: '/images/feest-hero.png',
     infoImage: '/images/feest-info.png',
     intro: `Easterein LIVE brengt de beste lokale en regionale muzikanten naar het podium van Bergsma.
-Een avond vol live muziek in een intieme setting — precies zoals muziek gehoord moet worden.
+Een avond vol live muziek in een intieme setting, precies zoals muziek gehoord moet worden.
 
 Kom vroeg voor een goede plek, bestel je favoriete drankje en laat je meenemen door de klanken van de avond.
 Easterein LIVE is laagdrempelig, gezellig en altijd een verrassing.`,
@@ -145,7 +145,7 @@ Easterein LIVE is laagdrempelig, gezellig en altijd een verrassing.`,
   'the-legendary-blues': {
     slug: 'the-legendary-blues',
     naam: 'The Legendary Blues',
-    tagline: 'Authentieke blues op zijn allerbest — recht uit het hart, recht in de ziel.',
+    tagline: 'Authentieke blues op zijn allerbest. Recht uit het hart, recht in de ziel.',
     datum: 'Zaterdag 22 november 2025',
     starttijd: '16:00',
     eindtijd: '21:00',
@@ -155,7 +155,7 @@ Easterein LIVE is laagdrempelig, gezellig en altijd een verrassing.`,
     heroImage: '/images/feest-hero.png',
     infoImage: '/images/feest-info.png',
     intro: `Bergsma Easterein verwelkomt The Legendary Blues voor een onvergetelijke middagavond.
-Rauw, eerlijk en vol gevoel — dit is blues zoals het bedoeld is. Geen poespas, gewoon muziek die je raakt.
+Rauw, eerlijk en vol gevoel. Dit is blues zoals het bedoeld is. Geen poespas, gewoon muziek die je raakt.
 
 De intieme sfeer van Bergsma past perfect bij dit genre. Sluit je ogen, voel de muziek en laat je meenemen.
 The Legendary Blues is een evenement voor iedereen die houdt van echte muziek met karakter.`,
@@ -178,7 +178,7 @@ The Legendary Blues is een evenement voor iedereen die houdt van echte muziek me
   'tack-blaak-frank': {
     slug: 'tack-blaak-frank',
     naam: 'Tack, Blaak & Frank',
-    tagline: 'Een uniek optreden van een bijzonder trio — muziek die je nergens anders hoort.',
+    tagline: 'Een uniek optreden van een bijzonder trio. Muziek die je nergens anders hoort.',
     datum: 'Zondag 30 november 2025',
     starttijd: '11:00',
     eindtijd: '21:00',
@@ -188,7 +188,7 @@ The Legendary Blues is een evenement voor iedereen die houdt van echte muziek me
     heroImage: '/images/feest-hero.png',
     infoImage: '/images/feest-info.png',
     intro: `Tack, Blaak & Frank brengen een dag vol bijzondere muziek naar Bergsma Easterein.
-Dit trio heeft een eigen geluid dat moeilijk in een hokje te plaatsen is — verrassend, meeslepend en altijd boeiend.
+Dit trio heeft een eigen geluid dat moeilijk in een hokje te plaatsen is. Verrassend, meeslepend en altijd boeiend.
 
 Van rustige akoestische klanken overdag tot een energiek slot in de avond: deze dag heeft een eigen ritme.
 Kom wanneer je wilt, blijf zo lang als je wilt en geniet van muziek die je bijblijft.`,

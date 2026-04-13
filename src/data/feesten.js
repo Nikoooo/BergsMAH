@@ -16,7 +16,7 @@ export const feestenData = {
     heroImage: '/images/feest-hero.png',
     infoImage: '/images/feest-info.png',
     intro: `Bergsma Easterein zet de deuren wagenwijd open voor een avond die je niet snel vergeet.
-Boerenrock brengt de beste live acts en DJ's naar het hart van Fryslân — met stampvolle zalen,
+Boerenrock brengt de beste live acts en DJ's naar het hart van Fryslân, met stampvolle zalen,
 koud bier en muziek die je tot diep in de nacht op de been houdt.
 
 Of je nu een vaste bezoeker bent of voor het eerst langskomt: bij Boerenrock is iedereen welkom.
@@ -25,7 +25,7 @@ alleen Bergsma die kan organiseren.`,
     faq: [
       {
         q: 'Kan ik tickets aan de deur kopen?',
-        a: 'Tickets zijn ook aan de deur verkrijgbaar zolang de voorraad strekt. Wij adviseren echter om vooraf online te bestellen — populaire avonden zijn snel uitverkocht.',
+        a: 'Tickets zijn ook aan de deur verkrijgbaar zolang de voorraad strekt. Wij adviseren echter om vooraf online te bestellen. Populaire avonden zijn snel uitverkocht.',
       },
       {
         q: 'Is er parkeergelegenheid bij Bergsma?',
@@ -33,7 +33,7 @@ alleen Bergsma die kan organiseren.`,
       },
       {
         q: 'Geldt het dresscode-beleid strikt?',
-        a: 'Western stijl wordt aangemoedigd maar is zeker niet verplicht. Kom zoals je bent — als je maar zin hebt om te feesten.',
+        a: 'Western stijl wordt aangemoedigd maar is zeker niet verplicht. Kom zoals je bent, als je maar zin hebt om te feesten.',
       },
       {
         q: 'Zijn er garderobe-faciliteiten?',
@@ -59,7 +59,7 @@ alleen Bergsma die kan organiseren.`,
     heroImage: '/images/feest-hero.png',
     infoImage: '/images/feest-info.png',
     intro: `Bergsma Easterein zet de deuren wagenwijd open voor een avond die je niet snel vergeet.
-Boerenrock brengt de beste live acts en DJ's naar het hart van Fryslân — met stampvolle zalen,
+Boerenrock brengt de beste live acts en DJ's naar het hart van Fryslân, met stampvolle zalen,
 koud bier en muziek die je tot diep in de nacht op de been houdt.
 
 Of je nu een vaste bezoeker bent of voor het eerst langskomt: bij Boerenrock is iedereen welkom.
@@ -68,7 +68,7 @@ alleen Bergsma die kan organiseren.`,
     faq: [
       {
         q: 'Kan ik tickets aan de deur kopen?',
-        a: 'Tickets zijn ook aan de deur verkrijgbaar zolang de voorraad strekt. Wij adviseren echter om vooraf online te bestellen — populaire avonden zijn snel uitverkocht.',
+        a: 'Tickets zijn ook aan de deur verkrijgbaar zolang de voorraad strekt. Wij adviseren echter om vooraf online te bestellen. Populaire avonden zijn snel uitverkocht.',
       },
       {
         q: 'Is er parkeergelegenheid bij Bergsma?',
@@ -76,7 +76,7 @@ alleen Bergsma die kan organiseren.`,
       },
       {
         q: 'Geldt het dresscode-beleid strikt?',
-        a: 'Western stijl wordt aangemoedigd maar is zeker niet verplicht. Kom zoals je bent — als je maar zin hebt om te feesten.',
+        a: 'Western stijl wordt aangemoedigd maar is zeker niet verplicht. Kom zoals je bent, als je maar zin hebt om te feesten.',
       },
       {
         q: 'Zijn er garderobe-faciliteiten?',
@@ -102,7 +102,7 @@ alleen Bergsma die kan organiseren.`,
     heroImage: '/images/feest-hero.png',
     infoImage: '/images/feest-info.png',
     intro: `Bergsma Easterein zet de deuren wagenwijd open voor een avond die je niet snel vergeet.
-Boerenrock brengt de beste live acts en DJ's naar het hart van Fryslân — met stampvolle zalen,
+Boerenrock brengt de beste live acts en DJ's naar het hart van Fryslân, met stampvolle zalen,
 koud bier en muziek die je tot diep in de nacht op de been houdt.
 
 Of je nu een vaste bezoeker bent of voor het eerst langskomt: bij Boerenrock is iedereen welkom.
@@ -111,7 +111,7 @@ alleen Bergsma die kan organiseren.`,
     faq: [
       {
         q: 'Kan ik tickets aan de deur kopen?',
-        a: 'Tickets zijn ook aan de deur verkrijgbaar zolang de voorraad strekt. Wij adviseren echter om vooraf online te bestellen — populaire avonden zijn snel uitverkocht.',
+        a: 'Tickets zijn ook aan de deur verkrijgbaar zolang de voorraad strekt. Wij adviseren echter om vooraf online te bestellen. Populaire avonden zijn snel uitverkocht.',
       },
       {
         q: 'Is er parkeergelegenheid bij Bergsma?',
@@ -141,7 +141,7 @@ alleen Bergsma die kan organiseren.`,
     heroImage: '/images/feest-hero.png',
     infoImage: '/images/feest-info.png',
     intro: `Bergsma Easterein zet de deuren wagenwijd open voor een avond die je niet snel vergeet.
-Boerenrock brengt de beste live acts en DJ's naar het hart van Fryslân — met stampvolle zalen,
+Boerenrock brengt de beste live acts en DJ's naar het hart van Fryslân, met stampvolle zalen,
 koud bier en muziek die je tot diep in de nacht op de been houdt.
 
 Of je nu een vaste bezoeker bent of voor het eerst langskomt: bij Boerenrock is iedereen welkom.
@@ -150,7 +150,7 @@ alleen Bergsma die kan organiseren.`,
     faq: [
       {
         q: 'Kan ik tickets aan de deur kopen?',
-        a: 'Tickets zijn ook aan de deur verkrijgbaar zolang de voorraad strekt. Wij adviseren echter om vooraf online te bestellen — populaire avonden zijn snel uitverkocht.',
+        a: 'Tickets zijn ook aan de deur verkrijgbaar zolang de voorraad strekt. Wij adviseren echter om vooraf online te bestellen. Populaire avonden zijn snel uitverkocht.',
       },
       {
         q: 'Is er parkeergelegenheid bij Bergsma?',

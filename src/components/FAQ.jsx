@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: 'Is Bergsma te huren voor een zakelijke bijeenkomst of privé-evenement?',
-    a: 'Ja — van vergaderingen en strategiedagen tot privédiners en personeelsfeesten. Alle informatie over arrangementen, ruimtes en catering vind je op onze Zakelijk & Catering pagina.',
+    a: 'Ja, van vergaderingen en strategiedagen tot privédiners en personeelsfeesten. Alle informatie over arrangementen, ruimtes en catering vind je op onze Zakelijk & Catering pagina.',
   },
 ]
 

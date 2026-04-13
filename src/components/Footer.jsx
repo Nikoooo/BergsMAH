@@ -5,7 +5,7 @@ export default function Footer() {
       <div
         style={{
           backgroundImage: "url('/images/footer.webp')",
-          backgroundSize: '100% 100%',
+          backgroundSize: 'cover',
           backgroundPosition: 'center',
           position: 'relative',
           overflow: 'hidden',

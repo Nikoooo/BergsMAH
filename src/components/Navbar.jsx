@@ -169,11 +169,11 @@ export default function Navbar({ onReserve }) {
 
       {/* CSS voor responsive gedrag */}
       <style>{`
-        @media (max-width: 768px) {
+        @media (max-width: 960px) {
           .desktop-nav { display: none !important; }
           .hamburger-btn { display: flex !important; }
         }
-        @media (min-width: 769px) {
+        @media (min-width: 961px) {
           .mobile-menu { display: none !important; }
         }
       `}</style>

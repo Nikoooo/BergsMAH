@@ -159,7 +159,7 @@ export default function Feesten({ onReserve }) {
       <div style={{ position: 'absolute', inset: 0, background: 'rgba(42, 26, 15, 0.65)', zIndex: 1 }} />
 
       {/* Ruimere container voor grotere kaarten — bijna volledige schermbreedte */}
-      <div style={{ position: 'relative', zIndex: 5, maxWidth: '1600px', width: '100%', margin: '0 auto', padding: '0 3rem' }}>
+      <div className="feesten-container" style={{ position: 'relative', zIndex: 5, maxWidth: '1600px', width: '100%', margin: '0 auto', padding: '0 3rem' }}>
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <h2

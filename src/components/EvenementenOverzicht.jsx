@@ -195,7 +195,7 @@ function OverzichtHero() {
           fontStyle: 'italic',
           margin: 0,
         }}>
-          Van wijnproewerijen tot live optredens — er is altijd iets te beleven
+          Van wijnproewerijen tot live optredens. Er is altijd iets te beleven.
         </p>
       </div>
     </section>

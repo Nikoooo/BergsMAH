@@ -149,7 +149,7 @@ export default function Agenda() {
           </h2>
           <p className="reveal reveal-delay-1" style={{ fontFamily: 'Lora, serif', color: 'rgba(230,214,191,0.8)', fontSize: '1rem', maxWidth: '520px', margin: '0 auto', lineHeight: 1.7 }}>
             Ontdek wat er komende tijd te beleven valt bij Bergsma. Van wijnproewerijen tot
-            live optredens — er is altijd iets te doen!
+            live optredens. Er is altijd iets te doen!
           </p>
         </div>
 

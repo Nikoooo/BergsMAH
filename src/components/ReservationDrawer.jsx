@@ -104,7 +104,7 @@ export default function ReservationDrawer({ open, onClose }) {
             marginBottom: '2rem',
             fontStyle: 'italic',
           }}>
-            Reservering via Guestplan — uw gegevens worden veilig verwerkt.
+            Reservering via Guestplan. Uw gegevens worden veilig verwerkt.
           </p>
 
           {/* Form fields */}
@@ -145,7 +145,7 @@ export default function ReservationDrawer({ open, onClose }) {
             </div>
           ))}
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem', marginBottom: '1.25rem' }}>
+          <div className="drawer-form-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem', marginBottom: '1.25rem' }}>
             <div>
               <label style={{ display: 'block', fontFamily: 'Lora, serif', color: 'rgba(230,214,191,0.8)', fontSize: '0.85rem', marginBottom: '0.5rem' }}>
                 Datum

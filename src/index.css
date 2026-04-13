@@ -405,6 +405,11 @@ body {
   .feesten-grid { grid-template-columns: 1fr !important; }
 }
 
+/* Feesten container: reduce side padding on mobile */
+@media (max-width: 640px) {
+  .feesten-container { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
+}
+
 /* Reviews: 4 col → 2 col → 1 col */
 @media (max-width: 1024px) {
   .reviews-grid { grid-template-columns: repeat(2, 1fr) !important; }
@@ -503,6 +508,9 @@ body {
 /* ─── Contactformulier grid (2-koloms invoervelden) ─── */
 @media (max-width: 640px) {
   .zakelijk-form-row {
+    grid-template-columns: 1fr !important;
+  }
+  .drawer-form-row {
     grid-template-columns: 1fr !important;
   }
 }

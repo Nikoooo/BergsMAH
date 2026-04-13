@@ -17,6 +17,8 @@ export default function Hero({ onReserve, onEnter }) {
 
   // Parallax
   useEffect(() => {
+    const isTouchDevice = window.matchMedia('(hover: none)').matches
+    if (isTouchDevice) return
     let ticking = false
     const onScroll = () => {
       if (!ticking) {
@@ -105,10 +107,11 @@ export default function Hero({ onReserve, onEnter }) {
           style={{
             fontFamily: 'Zapfino, cursive',
             color: '#E6D6BF',
-            fontSize: 'clamp(2.5rem, 6.5vw, 5.2rem)',
+            fontSize: 'clamp(2rem, 5.5vw, 5.2rem)',
             lineHeight: 1.45,
             margin: 0,
             paddingBottom: '2.5rem',
+            width: '100%',
             textShadow: '0 2px 8px rgba(0,0,0,0.4), 0 4px 32px rgba(0,0,0,0.35)',
           }}
         >
@@ -154,7 +157,7 @@ export default function Hero({ onReserve, onEnter }) {
             margin: 0,
           }}
         >
-          Stap binnen in Bergsma Easterein — waar de sfeer van weleer
+          Stap binnen in Bergsma Easterein, waar de sfeer van weleer
           samengaat met eerlijke gastvrijheid en heerlijk eten.
         </p>
 

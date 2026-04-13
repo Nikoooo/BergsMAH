@@ -259,7 +259,7 @@ const diensten = [
   {
     icon: <RingsIcon />,
     title: 'Ceremonie',
-    desc: 'Binnen of in onze romantische binnentuin — jullie beloften op een plek die het waard is.',
+    desc: 'Binnen of in onze romantische binnentuin. Jullie beloften op een plek die het waard is.',
   },
   {
     icon: <WineGlassIcon />,
@@ -280,7 +280,7 @@ const faqsDiensten = [
   },
   {
     q: 'Hoe ziet jullie trouwdag eruit?',
-    a: 'We beginnen met de ontvangst van jullie gasten met een drankje. Daarna volgt de ceremonie, het diner en het feest. We passen het programma volledig aan jullie wensen aan — van de eerste dans tot het dessert.',
+    a: 'We beginnen met de ontvangst van jullie gasten met een drankje. Daarna volgt de ceremonie, het diner en het feest. We passen het programma volledig aan jullie wensen aan, van de eerste dans tot het dessert.',
   },
   {
     q: 'Ceremonie binnen of in de binnentuin',
@@ -377,7 +377,7 @@ function TrouwenDiensten() {
               lineHeight: 1.75,
             }}
           >
-            Van ceremonie tot de laatste dans — wij zorgen dat alles klopt.
+            Van ceremonie tot de laatste dans. Wij zorgen dat alles klopt.
           </p>
         </div>
 
@@ -460,7 +460,7 @@ const features = [
 
 const faqsPraktisch = [
   {
-    q: 'Save the Date — zo werkt het',
+    q: 'Save the Date: zo werkt het',
     a: 'Nog niet zeker maar willen jullie datum alvast veiligstellen? Dat kan. Wij plaatsen geheel vrijblijvend een optionele reservering in onze agenda. De reservering wordt pas definitief zodra jullie zeker weten dat Bergsma de plek is voor jullie trouwdag.',
   },
   {
@@ -543,7 +543,7 @@ function TrouwenPraktisch() {
                 Alles Geregeld.<br />Niets Vergeten.
               </h2>
               <p style={{ fontFamily: 'Lora, serif', color: 'rgba(230,214,191,0.85)', fontSize: '0.95rem', lineHeight: 1.8, margin: '0 0 1rem' }}>
-                In de aanloop naar jullie grote dag staan wij klaar om te helpen waar nodig. Van de bruidstaart tot de styling van de ruimtes en het contact met een DJ of band — wij denken met jullie mee.
+                In de aanloop naar jullie grote dag staan wij klaar om te helpen waar nodig. Van de bruidstaart tot de styling van de ruimtes en het contact met een DJ of band, wij denken met jullie mee.
               </p>
               <p style={{ fontFamily: 'Lora, serif', color: 'rgba(230,214,191,0.85)', fontSize: '0.95rem', lineHeight: 1.8, margin: 0 }}>
                 Na afloop bieden wij de huwelijksovernachting aan in één van de prachtige bedand breakfasts van Easterein.

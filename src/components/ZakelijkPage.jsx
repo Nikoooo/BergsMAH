@@ -181,7 +181,7 @@ function ContactForm() {
 
   function handleSubmit(e) {
     e.preventDefault()
-    const subject = encodeURIComponent(`Zakelijke aanvraag — ${form.soort || 'Bijeenkomst'} — ${form.naam}`)
+    const subject = encodeURIComponent(`Zakelijke aanvraag: ${form.soort || 'Bijeenkomst'} - ${form.naam}`)
     const body = encodeURIComponent(
       `Naam: ${form.naam}\nBedrijf: ${form.bedrijf}\nE-mail: ${form.email}\nGewenste datum: ${form.datum}\nSoort bijeenkomst: ${form.soort}\n\nBericht:\n${form.bericht}`
     )
@@ -227,7 +227,7 @@ function ContactForm() {
         </div>
       ) : (
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+          <div className="zakelijk-form-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
             <div>
               <label style={labelStyle}>Naam</label>
               <input name="naam" required value={form.naam} onChange={handleChange} style={inputStyle} placeholder="Jouw naam" />
@@ -238,7 +238,7 @@ function ContactForm() {
             </div>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+          <div className="zakelijk-form-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
             <div>
               <label style={labelStyle}>E-mailadres</label>
               <input name="email" type="email" required value={form.email} onChange={handleChange} style={inputStyle} placeholder="jouw@email.nl" />
@@ -270,7 +270,7 @@ function ContactForm() {
               onChange={handleChange}
               rows={4}
               style={{ ...inputStyle, resize: 'vertical', lineHeight: 1.65 }}
-              placeholder="Vertel over jullie bijeenkomst — aantal personen, wensen, vragen…"
+              placeholder="Vertel over jullie bijeenkomst: aantal personen, wensen, vragen..."
             />
           </div>
 
@@ -368,7 +368,7 @@ function ZakelijkHero() {
           transform: showSub ? 'translateY(0)' : 'translateY(12px)',
           transition: 'opacity 0.7s ease, transform 0.7s ease',
         }}>
-          Vergaderen, dineren of catering op locatie — op maat geregeld in het hart van Fryslân.
+          Vergaderen, dineren of catering op locatie. Op maat geregeld in het hart van Fryslân.
         </p>
 
         <div style={{
@@ -403,17 +403,17 @@ function ZakelijkLocatie() {
     {
       icon: <PinIcon />,
       title: 'Centrale ligging',
-      text: 'Op gelijke afstand van Sneek, Leeuwarden en Bolsward — makkelijk bereikbaar vanuit heel Fryslân. Gratis parkeren voor al je gasten.',
+      text: 'Op gelijke afstand van Sneek, Leeuwarden en Bolsward. Makkelijk bereikbaar vanuit heel Fryslân. Gratis parkeren voor al je gasten.',
     },
     {
       icon: <AtmosphereIcon />,
       title: 'Authentieke sfeer',
-      text: 'Vergaderen in een historische omgeving werkt anders. Inspirerend, ontspannen en gedenkwaardig — ver weg van het alledaagse kantoor.',
+      text: 'Vergaderen in een historische omgeving werkt anders. Inspirerend, ontspannen en gedenkwaardig. Ver weg van het alledaagse kantoor.',
     },
     {
       icon: <FacilitiesIcon />,
       title: 'Volledig uitgerust',
-      text: 'Beamer, projectiescherm, microfoons, geluidsinstallatie, flip-overs en gratis wifi — alles staat klaar als jij aankomt.',
+      text: 'Beamer, projectiescherm, microfoons, geluidsinstallatie, flip-overs en gratis wifi. Alles staat klaar als jij aankomt.',
     },
   ]
 
@@ -454,10 +454,10 @@ function ZakelijkLocatie() {
                 Midden in Friesland, ver van het gewone
               </h2>
               <p style={{ fontFamily: 'Lora, serif', color: 'rgba(230,214,191,0.82)', fontSize: '0.95rem', lineHeight: 1.9, margin: '0 0 1.1rem' }}>
-                Op zoek naar een inspirerende vergaderlocatie die je team echt meeneemt? Bergsma Easterein biedt een authentieke omgeving — ideaal voor strategiedagen, teamdagen en personeelsuitjes in een setting die mensen bijblijft.
+                Op zoek naar een inspirerende vergaderlocatie die je team echt meeneemt? Bergsma Easterein biedt een authentieke omgeving, ideaal voor strategiedagen, teamdagen en personeelsuitjes in een setting die mensen bijblijft.
               </p>
               <p style={{ fontFamily: 'Lora, serif', color: 'rgba(230,214,191,0.72)', fontSize: '0.9rem', lineHeight: 1.9, margin: 0 }}>
-                Wil je de dag afsluiten met een borrel, een wandeling door natuurgebied 't Skrok of een gezamenlijk diner? We denken graag met je mee — van de eerste koffie tot de laatste toast.
+                Wil je de dag afsluiten met een borrel, een wandeling door natuurgebied 't Skrok of een gezamenlijk diner? We denken graag met je mee, van de eerste koffie tot de laatste toast.
               </p>
             </div>
           </div>
@@ -497,7 +497,7 @@ const ARRANGEMENTEN = [
   {
     nummer: 1,
     prijs: '€ 15,00',
-    duur: '4-uurs vergadering — exclusief lunch',
+    duur: '4-uurs vergadering, exclusief lunch',
     items: [
       'Onbeperkt koffie of thee',
       'Zoets bij de koffie',
@@ -511,7 +511,7 @@ const ARRANGEMENTEN = [
   {
     nummer: 2,
     prijs: '€ 29,50',
-    duur: '4-uurs vergadering — inclusief lunch',
+    duur: '4-uurs vergadering, inclusief lunch',
     items: [
       'Onbeperkt koffie of thee',
       'Zoets bij de koffie',
@@ -525,7 +525,7 @@ const ARRANGEMENTEN = [
   {
     nummer: 3,
     prijs: '€ 34,50',
-    duur: '8-uurs vergadering — inclusief lunch',
+    duur: '8-uurs vergadering, inclusief lunch',
     items: [
       'Onbeperkt koffie of thee',
       'Zoets bij de koffie',
@@ -561,7 +561,7 @@ function ZakelijkArrangementen() {
             Vergaderarrangementen
           </h2>
           <p className="reveal reveal-delay-1" style={{ fontFamily: 'Lora, serif', color: 'rgba(230,214,191,0.72)', fontSize: '0.95rem', maxWidth: '540px', margin: '0 auto', lineHeight: 1.8 }}>
-            Drie arrangementen — elk met een andere duur en invulling. Zaalhuur is niet inbegrepen en wordt op aanvraag bepaald.
+            Drie arrangementen, elk met een andere duur en invulling. Zaalhuur is niet inbegrepen en wordt op aanvraag bepaald.
           </p>
         </div>
 
@@ -602,7 +602,7 @@ const RUIMTES = [
     icon: <TheaterzaalIcon />,
     naam: 'Theaterzaal',
     capaciteit: '300',
-    beschrijving: 'Onze grote theaterzaal biedt ruimte voor congressen, grote personeelsfeesten en presentaties tot 300 personen — volledig uitgerust en indrukwekkend.',
+    beschrijving: 'Onze grote theaterzaal biedt ruimte voor congressen, grote personeelsfeesten en presentaties tot 300 personen. Volledig uitgerust en indrukwekkend.',
   },
 ]
 
@@ -628,7 +628,7 @@ function ZakelijkRuimtes() {
             Onze Ruimtes
           </h2>
           <p className="reveal reveal-delay-1" style={{ fontFamily: 'Lora, serif', color: 'rgba(230,214,191,0.72)', fontSize: '0.95rem', maxWidth: '480px', margin: '0 auto', lineHeight: 1.8 }}>
-            Van intiem en besloten tot groot en imposant — voor elke bijeenkomst is er een passende ruimte bij Bergsma Easterein.
+            Van intiem en besloten tot groot en imposant. Voor elke bijeenkomst is er een passende ruimte bij Bergsma Easterein.
           </p>
         </div>
 
@@ -686,7 +686,7 @@ function ZakelijkCatering() {
                 Bergsma komt naar jou toe
               </h2>
               <p style={{ fontFamily: 'Lora, serif', color: 'rgba(230,214,191,0.82)', fontSize: '0.95rem', lineHeight: 1.9, margin: '0 0 1.25rem' }}>
-                Bouwvakborrel, kerstborrel of personeelsfeest op je eigen bedrijfslocatie organiseren? Bergsma Easterein verzorgt catering op elke gewenste locatie — van een informele borrel tot een volledig aangekleed diner.
+                Bouwvakborrel, kerstborrel of personeelsfeest op je eigen bedrijfslocatie organiseren? Bergsma Easterein verzorgt catering op elke gewenste locatie, van een informele borrel tot een volledig aangekleed diner.
               </p>
               <p style={{ fontFamily: 'Lora, serif', color: 'rgba(230,214,191,0.72)', fontSize: '0.9rem', lineHeight: 1.9, margin: '0 0 2rem' }}>
                 Wij denken mee over de opzet, verzorgen de bediening en zorgen dat jij als gastheer of gastvrouw kunt genieten van de avond. Prijzen worden op maat bepaald.
@@ -697,7 +697,7 @@ function ZakelijkCatering() {
                   'Bouwvak- & kerstborrel op locatie',
                   'Vergaderarrangement met lunch of diner',
                   'Volledig verzorgd personeelsfeest',
-                  'Flexibel inzetbaar — van borrel tot meerdaags event',
+                  'Flexibel inzetbaar, van borrel tot meerdaags event',
                 ].map((item, i) => (
                   <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontFamily: 'Lora, serif', color: 'rgba(230,214,191,0.8)', fontSize: '0.88rem' }}>
                     <span style={{ color: 'rgba(201,169,110,0.85)', flexShrink: 0 }}>✓</span>
